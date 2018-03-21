@@ -39,8 +39,8 @@ hr {
 }
 
 .main-top {
-    padding-top: 300px;
-    padding-bottom: 300px;
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
 
 .img-main-top
@@ -53,5 +53,11 @@ hr {
 }
 
 section{
-    padding: 300px 0;
+    padding: 100px 0;
+}
+
+.footer{
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-color: #000000;
 }
