@@ -1,0 +1,43 @@
+.iconDetails {
+    float: left;
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 80%;
+  }
+ 
+hr
+{
+    max-width: 512px;
+    border-top: solid 2px;
+    margin-left: -5px;
+}
+
+#container
+{
+    text-align: center;
+    margin: 0 auto;
+    max-width: 80%;
+    height: 50%;
+    overflow: auto;
+    padding-top: /*the height of the absolutly positioned child*/ ;
+    position:relative;
+}
+.left-div
+{
+     display: inline-block;
+     max-width: 100%;
+     vertical-align: top;
+}
+.right-div
+{
+     display: inline-block;
+     max-width: 100%;
+     
+}
+@media screen and (max-width: 10%) 
+{
+     .left-div, .right-div
+     {
+          max-width: 100%;
+     }
+}
