@@ -49,7 +49,8 @@ hr {
 }
 
 .img-round {
-    border-radius: 50%;
+    background-size: 70.7%;
+    border-radius: 50% 50% 50% 50%;
 }
 
 section{
@@ -61,3 +62,4 @@ section{
     padding-bottom: 50px;
     background-color: #000000;
 }
+
