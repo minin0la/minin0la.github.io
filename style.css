@@ -1,43 +1,57 @@
-.iconDetails {
-    float: left;
-    max-height: 100%;
-    max-width: 100%;
-    border-radius: 80%;
-  }
- 
-hr
-{
+hr {
     max-width: 512px;
     border-top: solid 2px;
     margin-left: -5px;
 }
 
-#container
-{
-    text-align: center;
-    margin: 0 auto;
-    max-width: 80%;
-    height: 50%;
-    overflow: auto;
-    padding-top: /*the height of the absolutly positioned child*/ ;
-    position:relative;
+.navbar {
+    margin-bottom: 0px;
 }
-.left-div
-{
-     display: inline-block;
-     max-width: 100%;
-     vertical-align: top;
+
+.bg-main {
+    background-color: RGB(78, 101, 144);
 }
-.right-div
-{
-     display: inline-block;
-     max-width: 100%;
-     
+
+.text-white {
+    color: #fff
 }
-@media screen and (max-width: 10%) 
+
+.text-center {
+    text-align: center !important;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.marginleft-auto,
+.marginboth-auto {
+    margin-left: auto !important;
+}
+
+.marginleft-right,
+.marginboth-auto {
+    margin-right: auto !important;
+}
+
+.main-top {
+    padding-top: 300px;
+    padding-bottom: 300px;
+}
+
+.img-main-top
 {
-     .left-div, .right-div
-     {
-          max-width: 100%;
-     }
+    max-height: 200px;
+}
+
+.img-round {
+    border-radius: 50%;
+}
+
+section{
+    padding: 300px 0;
 }
