@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#4285F4">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Natawat Hebnak</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-light" style="background-color: #e3f2fd;">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">Natawat Hebnak</a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header class='main-top text-center text-white bg-main'>
+            <h1 class='mb-5'>Imperial Airline Calculator</h1>
+        <div class='container'>
+            <form id="form-shower">
+                <p class='lead'>Choose your option</p>
+                <select id="myselect">
+                    <option value="" selected="selected"></option>
+                    <option value="goal">Goal Calculator</option>
+                    <option value="max-passengers">Maximum Passenger</option>
+                    <option value="form_name3">Voucher Calculator</option>
+                </select>
+            </form>
+            <form name="goal" id="goal" style="display:none">
+                <div class='mb-3'>
+                    Money Goal
+                    <br>
+                    <input type="text" name="person-inventory" required>
+                </div>
+                <div class='mb-5'>
+                    Your Rank
+                    <br>
+                    <input type="radio" name="rank" value="pilot" checked> Pilot
+                    <br>
+                    <input type="radio" name="rank" value="seasoned"> Seasoned Pilot
+                    <br>
+                    <input type="radio" name="rank" value="fleet-admiral"> Fleet Admiral
+                    <br>
+                    <input type="radio" name="rank" value="grand-moff"> Grand Moff
+                    <br>
+                </div>
+                <div class='mb-3'>
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+            <form name="max-passengers" id="max-passengers" style="display:none">
+                <div class='mb-3'>
+                    Your maximum inventory weight
+                    <br>
+                    <input type="text" name="person-inventory" required>
+                </div>
+                <div class='mb-3'>
+                    Your plane maximum inventory weight
+                    <br>
+                    <input type="text" name="plane-inventory" required>
+                </div>
+                <div class='mb-5'>
+                    Your Rank
+                    <br>
+                    <input type="radio" name="rank" value="pilot" checked> Pilot
+                    <br>
+                    <input type="radio" name="rank" value="seasoned"> Seasoned Pilot
+                    <br>ß
+                    <input type="radio" name="rank" value="fleet-admiral"> Fleet Admiral
+                    <br>
+                    <input type="radio" name="rank" value="grand-moff"> Grand Moff
+                    <br>
+                </div>
+                <div class='mb-3'>
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </header>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script>
+        $("#myselect").on("change", function () {
+            $("#" + $(this).val()).show().siblings().hide();
+        })
+    </script>
+</body>
+
+</html>
