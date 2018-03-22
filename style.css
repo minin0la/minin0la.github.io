@@ -91,3 +91,7 @@ header {
     background: rgb(27, 27, 27); /* Fallback for older browsers without RGBA-support */
     background: rgba(27, 27, 27, 0.8);
 }
+
+.navbar-inner {
+    background:transparent;
+}
