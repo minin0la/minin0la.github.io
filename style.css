@@ -1,97 +1,38 @@
-hr {
-    max-width: 512px;
-    border-top: solid 2px;
-    margin-left: -5px;
+@import "https://fonts.googleapis.com/css?family=Product+Sans";
+
+html {
+  font-size: 1rem;
 }
 
-.navbar {
-    margin-bottom: 0px;
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 1.2rem;
+  }
 }
 
-body {
-    background: url(images/main-bg.jpg) no-repeat center center fixed;
-    content: '';
-    width: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 1.4rem;
+  }
 }
 
-.text-white {
-    color: #fff
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1.6rem;
+  }
 }
 
-.text-center {
-    text-align: center !important;
+body
+{
+  font-family: Product Sans, sans-serif !important;
 }
 
-.container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 100px;
-    padding-bottom: 50px;
+.bg-grey {
+    background-color: #333333;
 }
-
-.main-top {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.marginleft-auto,
-.marginboth-auto {
-    margin-left: auto !important;
-}
-
-.marginleft-right,
-.marginboth-auto {
-    margin-right: auto !important;
-}
-
-.img-main-top {
-    max-height: 200px;
-}
-
-.img-round {
-    background-size: 70.7%;
-    border-radius: 50% 50% 50% 50%;
-}
-
-header {
-    width: 100%;
-    height: 900px;
-}
-
-.about-me {
-    background: url(images/about-bg.jpg) no-repeat center center fixed;
-    content: '';
-    width: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.projects {
-    background: url(images/projects-bg.jpg) no-repeat center center fixed;
-    content: '';
-    width: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.transbox {
-    padding:20px;
-    background: rgb(27, 27, 27); /* Fallback for older browsers without RGBA-support */
-    background: rgba(27, 27, 27, 0.8);
-}
-
-.navbar-inner {
-    background:transparent;
+.profile-pic{
+  width: 20vw;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 50%;
 }
