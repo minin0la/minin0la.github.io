@@ -25,6 +25,7 @@ html {
 body
 {
   font-family: Product Sans, sans-serif !important;
+  background-color: black !important;
 }
 
 .bg-grey {
@@ -35,4 +36,8 @@ body
   height: auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 50%;
+}
+
+.typed-cursor {
+  
 }
