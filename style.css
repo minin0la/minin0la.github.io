@@ -28,10 +28,6 @@ body
   background-color: black !important;
 }
 
-.bg-grey {
-    background-color: #333333;
-}
-
 .profile-pic {
   max-width: 50%;
   height: auto;
